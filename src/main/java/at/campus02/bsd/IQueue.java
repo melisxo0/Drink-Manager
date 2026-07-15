@@ -1,34 +1,44 @@
 
-// fastly written (not really nice) comments you should adapt
-public interface IQueue {
-  /** 
-   * I am a really bad comment
-   * 
-   * fasdfadsffdsadsf
-   * 
-   * fdsasdfadsf
-   * 
-   *  add object to queue, true if okay 
-   * 
-   * i fell asleep on my keyboard...
-   * 
-   * */ 
-  public abstract boolean offer(String obj);
+package at.campus02.bsd;
 
-  //returns + del 1st element; null if nothing in there
-   //
-  public abstract String poll();
+import java.util.NoSuchElementException;
 
-  /* 
-  same as poll, if there is nothing in there error NoSuchElementException
-   */
-  public abstract String remove();
+/**
+ * A generic queue interface that can handle any type of object.
+ * * @param <T> the type of elements held in this queue
+ */
+public interface IQueue<T> {
 
-  // 1st element without dlete, otherwise null
-   
-  public abstract String peek();
+    /**
+     * Adds an object to the queue.
+     * * @param obj the element to add to the queue
+     * @return true if the addition is successful, false if the queue is full
+     */
+    public abstract boolean offer(T obj);
 
-  // element is to peek what remove is to poll
-  
-  public abstract String element();
+    /**
+     * Retrieves and removes the first element of the queue.
+     * * @return the first element of the queue, or null if the queue is empty
+     */
+    public abstract T poll();
+
+    /**
+     * Retrieves and removes the first element of the queue.
+     * * @return the first element of the queue
+     * @throws NoSuchElementException if the queue is empty
+     */
+    public abstract T remove();
+
+    /**
+     * Retrieves, but does not remove, the first element of the queue.
+     * * @return the first element of the queue, or null if the queue is empty
+     */
+    public abstract T peek();
+
+    /**
+     * Retrieves, but does not remove, the first element of the queue.
+     * * @return the first element of the queue
+     * @throws NoSuchElementException if the queue is empty
+     */
+    public abstract T element();
 }
