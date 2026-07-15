@@ -1,0 +1,52 @@
+# Drink Manager
+
+## Projektinformationen
+Dieses Projekt wurde im Rahmen der Übung 04 (Gruppenübung) der FH CAMPUS 02 erstellt. Ziel ist es, alle gelernten Inhalte der Lehrveranstaltung im Rahmen eines größeren Beispiels (Queue) gemeinsam umzusetzen.
+
+**Teammitglieder:**
+* Melisa Gashi
+* Viktoria Gospodinova 
+
+---
+
+## Taskliste
+
+**Maven Detail (`maven_detail`)**
+- [ ] `pom.xml` um notwendige Bibliotheken erweitern
+- [ ] Entwickler*innen Informationen für beide Teammitglieder hinzufügen
+- [ ] Adresse des Git Repositories hinzufügen
+- [ ] Maven Konfiguration über die Kommandozeile testen
+
+**Bug Hunt (`bug_hunt`)**
+- [ ] Fehler 1 im bestehenden Code finden und korrigieren
+- [ ] Fehler 2 im bestehenden Code finden und korrigieren
+- [ ] Fehler 3 im bestehenden Code finden und korrigieren
+
+**Drink (`drink`)**
+- [ ] Klasse `Cocktail` erstellen (implementiert Interface `Drink`)
+- [ ] Konstruktor für Name (String) und Liquid Liste (`List<Liquid>`) umsetzen
+
+**Queue (`queue` & persönliche Branches)**
+- [ ] Klasse `DrinkQueue` erstellen
+- [ ] Persönliche Branches (`queue_name1`, `queue_name2`) erstellen
+- [ ] Interface-Methoden Teil 1 umsetzen
+- [ ] Interface-Methoden Teil 2 umsetzen
+- [ ] Persönliche Branches in den gemeinsamen `queue` Branch mergen
+
+**Javadoc (`javadoc`)**
+- [ ] Javadoc für bestehende Klassen erstellen (inkl. `@param`, `@return`, `@throws`)
+- [ ] Javadoc für neue Klassen (`Cocktail`, `DrinkQueue`) erstellen
+- [ ] Attribute aller Klassen dokumentieren
+
+**Tests (`tests`)**
+- [ ] Testdateien nach dem vorgegebenen Namensschema (`KlassenNameTest.java`) erstellen
+- [ ] 100% Testabdeckung für bestehende Klassen erreichen
+- [ ] 100% Testabdeckung für neue Klassen erreichen
+- [ ] `mvn test` über die Kommandozeile fehlerfrei ausführen
+
+**Maven Site (`maven_site`)**
+- [ ] Ordnerstruktur für Maven Site anlegen (`src/site/markdown`)
+- [ ] `site.xml` zur Menükonfiguration erstellen
+- [ ] `member1.md` mit umgesetzten Teilen erstellen
+- [ ] `member2.md` mit umgesetzten Teilen erstellen
+- [ ] `mvn site` (nach `mvn test`) über die Kommandozeile generieren und `index.html` prüfen
