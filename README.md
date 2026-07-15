@@ -25,8 +25,8 @@ Dieses Projekt wurde im Rahmen der Übung 04 (Gruppenübung) der FH CAMPUS 02 er
 - [x] Konstruktor für Name (String) und Liquid Liste (`List<Liquid>`) umsetzen
 
 **Queue (`queue` & persönliche Branches)**
-- [ ] Klasse `DrinkQueue` erstellen
-- [ ] Persönliche Branches (`queue_name1`, `queue_name2`) erstellen
+- [x] Klasse `DrinkQueue` erstellen
+- [ ] Persönliche Branches (`queue_melisa`, `queue_viktoria`) erstellen
 - [ ] Interface-Methoden Teil 1 umsetzen
 - [ ] Interface-Methoden Teil 2 umsetzen
 - [ ] Persönliche Branches in den gemeinsamen `queue` Branch mergen
