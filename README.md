@@ -12,10 +12,10 @@ Dieses Projekt wurde im Rahmen der Übung 04 (Gruppenübung) der FH CAMPUS 02 er
 ## Taskliste
 
 **Maven Detail (`maven_detail`)**
-- [ ] `pom.xml` um notwendige Bibliotheken erweitern
-- [ ] Entwickler*innen Informationen für beide Teammitglieder hinzufügen
-- [ ] Adresse des Git Repositories hinzufügen
-- [ ] Maven Konfiguration über die Kommandozeile testen
+- [x] `pom.xml` um notwendige Bibliotheken erweitern
+- [x] Entwickler*innen Informationen für beide Teammitglieder hinzufügen
+- [x] Adresse des Git Repositories hinzufügen
+- [x] Maven Konfiguration über die Kommandozeile testen
 
 **Bug Hunt (`bug_hunt`)**
 - [ ] Fehler 1 im bestehenden Code finden und korrigieren
