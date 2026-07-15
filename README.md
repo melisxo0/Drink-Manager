@@ -21,8 +21,8 @@ Dieses Projekt wurde im Rahmen der Übung 04 (Gruppenübung) der FH CAMPUS 02 er
 - [x] Alle Fehler im Code korrigiert und gefunden
 
 **Drink (`drink`)**
-- [ ] Klasse `Cocktail` erstellen (implementiert Interface `Drink`)
-- [ ] Konstruktor für Name (String) und Liquid Liste (`List<Liquid>`) umsetzen
+- [x] Klasse `Cocktail` erstellen (implementiert Interface `Drink`)
+- [x] Konstruktor für Name (String) und Liquid Liste (`List<Liquid>`) umsetzen
 
 **Queue (`queue` & persönliche Branches)**
 - [ ] Klasse `DrinkQueue` erstellen
