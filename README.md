@@ -18,9 +18,7 @@ Dieses Projekt wurde im Rahmen der Übung 04 (Gruppenübung) der FH CAMPUS 02 er
 - [x] Maven Konfiguration über die Kommandozeile testen
 
 **Bug Hunt (`bug_hunt`)**
-- [ ] Fehler 1 im bestehenden Code finden und korrigieren
-- [ ] Fehler 2 im bestehenden Code finden und korrigieren
-- [ ] Fehler 3 im bestehenden Code finden und korrigieren
+- [x] Alle Fehler im Code korrigiert und gefunden
 
 **Drink (`drink`)**
 - [ ] Klasse `Cocktail` erstellen (implementiert Interface `Drink`)

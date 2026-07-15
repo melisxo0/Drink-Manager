@@ -1,7 +1,7 @@
 package at.campus02.bsd;
 // put into drinkss
 public class Liquid {
-    /
+    // name of the liquid
     private String name;
     // volume in l
      
