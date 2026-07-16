@@ -32,9 +32,9 @@ Dieses Projekt wurde im Rahmen der Übung 04 (Gruppenübung) der FH CAMPUS 02 er
 - [x] Persönliche Branches in den gemeinsamen `queue` Branch mergen
 
 **Javadoc (`javadoc`)**
-- [ ] Javadoc für bestehende Klassen erstellen (inkl. `@param`, `@return`, `@throws`)
-- [ ] Javadoc für neue Klassen (`Cocktail`, `DrinkQueue`) erstellen
-- [ ] Attribute aller Klassen dokumentieren
+- [x] Javadoc für bestehende Klassen erstellen (inkl. `@param`, `@return`, `@throws`)
+- [x] Javadoc für neue Klassen (`Cocktail`, `DrinkQueue`) erstellen
+- [x] Attribute aller Klassen dokumentieren
 
 **Tests (`tests`)**
 - [ ] Testdateien nach dem vorgegebenen Namensschema (`KlassenNameTest.java`) erstellen

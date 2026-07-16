@@ -1,29 +1,31 @@
 package at.campus02.bsd;
+
 /**
- * Class represents a simple drink liquid which can be used in
- * drinks
+ * Represents a simple drink consisting of exactly one liquid ingredient.
+ * Extends the abstract Drink class.
  */
-public class SimpleDrink extends Drink{
+public class SimpleDrink extends Drink {
+
     /**
-     * uses only one liquid
+     * The single liquid ingredient of this drink.
      */
     protected Liquid l;
+
     /**
-     * Creates a SimpleDrink object with given age and
-     * liquid
+     * Constructor to create a new SimpleDrink.
      *
-     * @param name name of drink
-     * @param l only liquid in drink
+     * @param name   the name of the drink
+     * @param liquid the single liquid ingredient of the drink
      */
-    SimpleDrink(String name, Liquid l){
+    public SimpleDrink(String name, Liquid liquid) {
         super(name);
-        this.l = l;
+        this.l = liquid;
     }
 
     /**
-     * Returns volume of liquid l
+     * Calculates the total volume of this drink, which is the volume of its single liquid.
      *
-     * @return the volume of drink in litre
+     * @return the volume of the drink in liters
      */
     @Override
     public double getVolume() {
@@ -31,24 +33,22 @@ public class SimpleDrink extends Drink{
     }
 
     /**
-     * Returns alcohol volume percent of liquid l
+     * Gets the alcohol percentage of this drink, which is the alcohol percentage of its single liquid.
      *
-     * @return alcohol volume percent
+     * @return the alcohol percentage
      */
     @Override
     public double getAlcoholPercent() {
         return l.getAlcoholPercent();
     }
+
     /**
-     * Gives information if drink is alcoholic or not
+     * Checks if this drink contains alcohol.
      *
-     * @return true when alcoholic liquids are present, otherwise false
+     * @return true if the liquid ingredient has an alcohol percentage greater than 0, false otherwise
      */
     @Override
     public boolean isAlcoholic() {
-        if(l.getAlcoholPercent() > 0){
-            return true;
-        }
-        return false;
+        return l.getAlcoholPercent() > 0;
     }
 }
