@@ -1,46 +1,60 @@
 package at.campus02.bsd;
 
 /**
- * Abstract base class for concrete drink classes
+ * Abstract base class representing a generic drink.
+ * Concrete drink types should extend this class and implement its abstract methods.
  */
 public abstract class Drink {
+
     /**
-     * name of the drink
+     * The name of the drink.
      */
     protected String name;
+
     /**
-     * Creates a Drink object with given name
+     * Constructor to initialize a drink with a name.
      *
-     * @param name name of the drink
-     *
+     * @param name the name of the drink
      */
     public Drink(String name) {
         this.name = name;
     }
+
     /**
-     * Calculates and returns volume of drink
+     * Abstract method to get the total volume of the drink.
      *
-     * @return the volume of drink in liter
+     * @return volume of the drink in liters
      */
     public abstract double getVolume();
+
     /**
-     * Calculates and returns the alcohol percentage
+     * Abstract method to get the alcohol percentage of the drink.
      *
-     * @return alcohol volume percent (e.g. 50)
+     * @return alcohol percentage of the drink
      */
     public abstract double getAlcoholPercent();
+
     /**
-     * Gives information if drink is alcoholic or not
+     * Abstract method to check if the drink contains alcohol.
      *
-     * @return true when alcoholic liquids are present, otherwise false
+     * @return true if alcoholic, false otherwise
      */
     public abstract boolean isAlcoholic();
 
-
+    /**
+     * Gets the name of the drink.
+     *
+     * @return the name of the drink
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Sets the name of the drink.
+     *
+     * @param name the new name of the drink
+     */
     public void setName(String name) {
         this.name = name;
     }

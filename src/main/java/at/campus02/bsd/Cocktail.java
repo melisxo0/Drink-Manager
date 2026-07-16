@@ -3,29 +3,32 @@ package at.campus02.bsd;
 import java.util.List;
 
 /**
- * Represents a Cocktail which implements the Drink interface.
- * A cocktail consists of a name and a list of liquid ingredients.
+ * Represents a cocktail consisting of multiple liquid ingredients.
+ * Extends the abstract Drink class.
  */
 public class Cocktail extends Drink {
 
-    private String name;
+    /**
+     * The list of liquid ingredients in this cocktail.
+     */
     private List<Liquid> liquids;
 
     /**
-     * Constructor for Cocktail.
-     * @param name The name of the cocktail
-     * @param liquids The list of liquid ingredients in the cocktail
+     * Constructor to create a new Cocktail.
+     *
+     * @param name    the name of the cocktail
+     * @param liquids the list of liquid ingredients
      */
     public Cocktail(String name, List<Liquid> liquids) {
-        super(name); // This passes the name to the Drink parent class
+        super(name);
         this.liquids = liquids;
     }
 
-    @Override
-    public String getName() {
-        return this.name;
-    }
-
+    /**
+     * Calculates the total volume of this cocktail by summing the volumes of all ingredients.
+     *
+     * @return the total volume of the cocktail in liters
+     */
     @Override
     public double getVolume() {
         double totalVolume = 0.0;
@@ -35,6 +38,11 @@ public class Cocktail extends Drink {
         return totalVolume;
     }
 
+    /**
+     * Calculates the total alcohol percentage of this cocktail based on its ingredients.
+     *
+     * @return the average alcohol percentage of the combined liquids, or 0.0 if empty
+     */
     @Override
     public double getAlcoholPercent() {
         double totalVolume = getVolume();
@@ -47,10 +55,14 @@ public class Cocktail extends Drink {
             totalAlcoholVolume += (liquid.getVolume() * (liquid.getAlcoholPercent() / 100.0));
         }
 
-        // Return the percentage back on a scale from 0 to 100
         return (totalAlcoholVolume / totalVolume) * 100.0;
     }
 
+    /**
+     * Checks if this cocktail contains any alcoholic liquid ingredients.
+     *
+     * @return true if at least one ingredient has an alcohol percentage greater than 0, false otherwise
+     */
     @Override
     public boolean isAlcoholic() {
         for (Liquid liquid : liquids) {
@@ -61,16 +73,21 @@ public class Cocktail extends Drink {
         return false;
     }
 
-    // Getters and Setters (Optional but highly recommended)
+    /**
+     * Gets the list of liquids in this cocktail.
+     *
+     * @return the list of liquids
+     */
     public List<Liquid> getLiquids() {
         return liquids;
     }
 
+    /**
+     * Sets the list of liquids in this cocktail.
+     *
+     * @param liquids the new list of liquids
+     */
     public void setLiquids(List<Liquid> liquids) {
         this.liquids = liquids;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }
