@@ -35,16 +35,27 @@ public class DrinkQueue implements IQueue<Drink> {
     // Viktoria will do these three
     @Override
     public Drink remove() {
-        return null; // placeholder
+        Drink element = poll();
+        if (element == null) {
+            throw new NoSuchElementException("There are no elements left in the queue");
+        }
+        return element;
     }
 
     @Override
     public Drink peek() {
-        return null; // placeholder
+        if (!elements.isEmpty()) {
+            return elements.get(0);
+        }
+        return null;
     }
 
     @Override
     public Drink element() {
-        return null; // placeholder
+        Drink element = peek();
+        if (element == null) {
+            throw new NoSuchElementException("There are no elements left in the queue");
+        }
+        return element;
     }
 }
