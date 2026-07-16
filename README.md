@@ -26,10 +26,10 @@ Dieses Projekt wurde im Rahmen der Übung 04 (Gruppenübung) der FH CAMPUS 02 er
 
 **Queue (`queue` & persönliche Branches)**
 - [x] Klasse `DrinkQueue` erstellen
-- [ ] Persönliche Branches (`queue_melisa`, `queue_viktoria`) erstellen
-- [ ] Interface-Methoden Teil 1 umsetzen
-- [ ] Interface-Methoden Teil 2 umsetzen
-- [ ] Persönliche Branches in den gemeinsamen `queue` Branch mergen
+- [x] Persönliche Branches (`queue_melisa`, `queue_viktoria`) erstellen
+- [x] Interface-Methoden Teil 1 umsetzen
+- [x] Interface-Methoden Teil 2 umsetzen
+- [x] Persönliche Branches in den gemeinsamen `queue` Branch mergen
 
 **Javadoc (`javadoc`)**
 - [ ] Javadoc für bestehende Klassen erstellen (inkl. `@param`, `@return`, `@throws`)

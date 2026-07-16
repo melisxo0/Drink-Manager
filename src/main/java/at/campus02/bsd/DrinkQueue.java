@@ -16,12 +16,20 @@ public class DrinkQueue implements IQueue<Drink> {
     // Melisa will do these two
     @Override
     public boolean offer(Drink obj) {
-        return false; // placeholder
+        if (elements.size() < maxSize) {
+            elements.add(obj);
+            return true;
+        }
+        return false;
     }
 
     @Override
     public Drink poll() {
-        return null; // placeholder
+        Drink element = peek();
+        if (!elements.isEmpty()) {
+            elements.remove(0);
+        }
+        return element;
     }
 
     // Viktoria will do these three
